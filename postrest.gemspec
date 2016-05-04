@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.email       = 'guy@guyirvine.com'
   s.files       = Dir['app.rb', '{lib}/**/*.rb', 'bin/*', 'LICENSE', '*.md']
   s.homepage    = 'http://rubygems.org/gems/postrest'
-#  s.add_dependency('json')
-#  s.add_dependency('fluiddb')
-#  s.add_dependency('sinatra')
+  s.add_dependency('json')
+  s.add_dependency('fluiddb')
+  s.add_dependency('sinatra')
   s.executables << 'postrest'
 end
