@@ -6,7 +6,9 @@ require 'json'
 # Home
 class PostRest < Sinatra::Base
   set :static, true
-  set :public_folder, File.expand_path('..', __FILE__)
+  set :public_folder, "#{File.expand_path('..', __FILE__)}/../public"
+  set :bind, ENV['BIND'] || '0.0.0.0'
+  set :port, ENV['PORT'] || 4567
 
   get '/' do
     send_file settings.public_folder + '/index.htm'
