@@ -88,7 +88,12 @@
         sql: $(".form .sql").val()
       }
 
+      $("#output").empty();
       $.post("/sql", payload, function(l) {
+          if ( l.length === 0 ) {
+            $("#output").html('<div style="width: 80%;margin: auto;">No rows returned.</div>');
+            return;
+          }
           console.log( 'l: ', l );
             $("#output").pivotUI(l, {
               renderers: renderers,

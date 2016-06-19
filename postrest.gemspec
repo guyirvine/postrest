@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name        = 'postrest'
-  s.version     = '0.0.6'
+  s.version     = '0.0.7'
   s.license     = 'LGPL-3.0'
-  s.date        = '2016-05-05'
+  s.date        = '2016-06-19'
   s.summary     = 'postrest'
   s.description = 'zero to one for viewing and getting data from your db'
   s.authors     = ['Guy Irvine']
